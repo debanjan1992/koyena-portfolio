@@ -5,13 +5,16 @@ import Block from "../block";
 
 const HighlightLabel = (props: HighlightLabelProps) => {
 
-    return <Block {...props} className={styles.container}>
-        <div className={styles.wrapper}>
-            <div className={styles.label}>{props.children}</div>
-            <div className="material-symbols-outlined">
+    return <Block className={styles.container} {...props}>
+        <Block className={styles.wrapper}>
+            {props.reverse && <Block className="material-symbols-outlined">
+                keyboard_arrow_up
+            </Block>}
+            <Block className={styles.label}>{props.children}</Block>
+            {!props.reverse && <Block className="material-symbols-outlined">
                 keyboard_arrow_down
-            </div>
-        </div>
+            </Block>}
+        </Block>
     </Block>
 };
 

@@ -1,5 +1,12 @@
 .container {
     display: inline-block;
+    cursor: pointer;
+    color: #A591C6;
+    transition: 0.4;
+
+    &:hover {
+        color: #e9dbff;
+    }
 }
 
 .wrapper {

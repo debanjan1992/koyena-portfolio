@@ -2,6 +2,7 @@ import Block from "../ui/block";
 import { BlockProps } from "../ui/types";
 import image from "../../assets/mimi.png";
 import styles from "./bio.module.scss";
+import Pill from "../ui/pill/pill";
 
 const BioLeft = (props: BlockProps) => {
     return <Block {...props} className={styles.bioText}>
@@ -13,15 +14,22 @@ const BioLeft = (props: BlockProps) => {
 };
 
 const BioRight = (props: BlockProps) => {
-    return <Block {...props} style={{
-        ...props.style,
-        display: "flex",
-        justifyContent: "center",
-    }}>
-        <Block className={styles.imageBackground}>
-            <img className={styles.mimi} src={image} />
+    return <Block style={{ position: "relative" }}>
+        <Block className={styles.pills}>
+            <Pill label="movie buff" backgroundColor="#5F8BFF" />
+            <Pill label="gardener" backgroundColor="#FFF38A" color="#958600" />
+            <Pill label="newbie reader" backgroundColor="#F16428" />
         </Block>
-    </Block>;
+        <Block {...props} style={{
+            ...props.style,
+            display: "flex",
+            justifyContent: "center",
+        }}>
+            <Block className={styles.imageBackground}>
+                <img className={styles.mimi} src={image} />
+            </Block>
+        </Block>
+    </ Block>;
 };
 
 

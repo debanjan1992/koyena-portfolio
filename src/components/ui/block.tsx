@@ -29,7 +29,7 @@ const Block = (props: BlockProps) => {
     };
 
 
-    return <div style={props.style ? {...props.style, ...getStyles()} : getStyles()} {...props}>{props.children}</div>
+    return <div {...props} style={props.style ? {...props.style, ...getStyles()} : getStyles()}>{props.children}</div>
 };
 
 export default Block;
