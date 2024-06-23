@@ -2,10 +2,12 @@ import { CaseStudyProps } from "./types";
 import styles from "./case-study.module.scss";
 import Button from "../ui/button/button";
 import Block from "../ui/block";
+import { getRandomDelay } from "../../utils";
 
 const CaseStudy = (props: CaseStudyProps) => {
+
     return (
-        <Block className={styles.container} style={{ backgroundColor: props.backgroundColor }}>
+        <div className={styles.container} style={{ backgroundColor: props.backgroundColor }}>
             <Block className={styles.outerWrapper}>
                 <Block className={styles.left}>
                     <Block className={styles.wrapper}>
@@ -19,8 +21,8 @@ const CaseStudy = (props: CaseStudyProps) => {
                 </Block>
                 <Block className={styles.right}>{props.rightContent}</Block>
             </Block>
-            <Block className={styles.highlight} style={{ backgroundColor: props.highlightColor }}></Block>
-        </Block>
+            <Block className={styles.highlight} style={{ backgroundColor: props.highlightColor, animationDelay: (getRandomDelay() * 2) + 's' }}></Block>
+        </div>
     );
 };
 

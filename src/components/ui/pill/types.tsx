@@ -6,4 +6,5 @@ export interface PillProps {
     color?: string;
     icon?: ReactNode;
     style?: React.CSSProperties;
+    className?: string;
 }

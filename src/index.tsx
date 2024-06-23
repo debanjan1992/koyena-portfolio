@@ -4,7 +4,6 @@ import './fonts.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Block from './components/ui/block';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -4,6 +4,10 @@
     padding: 28px 60px;
     position: relative;
     overflow: hidden;
+    transition: 0.4s;
+    // &:hover {
+    //     transform: rotateZ(2deg);
+    // }
 }
 
 .left {
@@ -14,6 +18,7 @@
 .right {
     flex: 1;
     text-align: center;
+    z-index: 2;
 }
 
 .header {
@@ -43,6 +48,19 @@
     z-index: 1;
     top: -183px;
     left: -80px;
+    animation: drift 20s infinite reverse;
+
+    @keyframes drift {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 
 }
 

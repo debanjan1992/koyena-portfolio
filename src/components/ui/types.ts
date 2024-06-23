@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
 
-export interface BlockProps {
+export interface BlockProps extends React.HTMLAttributes<HTMLDivElement> {
     m?: number;
     p?: number;
     mb?: number;
@@ -13,5 +13,5 @@ export interface BlockProps {
     pr?: number;
     children?: ReactNode;
     className?: string;
-    style?: CSSProperties;
+    ref?: any;
 }
