@@ -4,8 +4,10 @@ import { NavMenuItem } from "../components/ui/nav/types";
 import Banner from "../components/banner/banner";
 import CaseStudy from "../components/case-study/case-study";
 import styles from "./home-page.module.scss";
-import Image1 from "../assets/image1.png";
-import Image2 from "../assets/image2.png";
+import { caseStudies } from "../data";
+import HighlightLabel from "../components/ui/highlight-label/highlight-label";
+import Bio from "../components/bio/bio";
+import Block from "../components/ui/block";
 
 const HomePage = () => {
     const menuItems: NavMenuItem[] = [
@@ -20,50 +22,24 @@ const HomePage = () => {
     return (
         <div id="home-page">
             <Nav logo={logo} items={menuItems}></Nav>
-            <main>
-                <Banner />
-                <div className={styles.caseStudies}>
-                    <div className={styles.wrapper}>
-                        <CaseStudy
-                            headerText="01 - FLIPKART - What’s Your Vibe?"
-                            title="Enhancing UX for Tail & Torso Discoverability"
-                            summary="Boosting discoverability in Flipkart's Home & Furniture category by highlighting 1700+ Tail & Torso verticals, essential for sector growth"
-                            backgroundColor="#EC304B"
-                            highlightColor="#DD112F"
-                            rightContent={<img src={Image1} width="262px" style={{
-                                position: "relative",
-                                top: "44px",
-                                left: "120px"
-                            }} />}
-                        />
-
-                        <CaseStudy
-                            headerText="01 - FLIPKART GREEN"
-                            title="Environmentally Safe Shopping Made Simple"
-                            summary="Empowering eco-conscious consumers with a user-friendly platform for discovering and buying environmentally safe products effortlessly"
-                            backgroundColor="#008E41"
-                            highlightColor="#007E3A"
-                            rightContent={<img src={Image2} width="262px" style={{
-                                position: "relative",
-                                top: "44px",
-                                left: "120px"
-                            }} />}
-                        />
-
-                        <CaseStudy
-                            headerText="03 - PREVIOUS WORK "
-                            title="Behance Portfolio"
-                            summary="My early Behance projects opened doors to exciting design opportunities, showing my growth from newbie to experienced UX Designer"
-                            backgroundColor="#4178FF"
-                            highlightColor="#1C5BF6"
-                            rightContent={<img src={Image2} width="262px" style={{
-                                position: "relative",
-                                top: "44px",
-                                left: "120px"
-                            }} />}
-                        />
-                    </div>
-                </div>
+            <main className={styles.main}>
+                <Banner mb={10} />
+                <center><HighlightLabel style={{ color: "#A591C6" }}>Selected Work</HighlightLabel></center>
+                <Block className={styles.caseStudies} mb={8} mt={5}>
+                    <Block className={styles.wrapper}>
+                        {caseStudies.map(cs => <CaseStudy
+                            headerText={cs.headerText}
+                            title={cs.title}
+                            summary={cs.summary}
+                            backgroundColor={cs.backgroundColor}
+                            highlightColor={cs.highlightColor}
+                            rightContent={cs.rightContent}
+                            {...(cs.buttonLabel && { buttonLabel: cs.buttonLabel })}
+                        />)}
+                    </Block>
+                </Block>
+                <center><HighlightLabel mt={6} style={{ color: "#A591C6" }}>About Me</HighlightLabel></center>
+                <Bio mt={5} mb={5} />
             </main>
         </div>
     );

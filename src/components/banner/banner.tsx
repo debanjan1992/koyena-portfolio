@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./banner.module.scss";
 import Pill from "../ui/pill/pill";
+import { BannerProps } from "./types";
+import Block from "../ui/block";
 
-const Banner = () => {
+const Banner = (props: BannerProps) => {
     return (
-        <div className={styles.container}>
-            <div style={{ height: "400px" }}>
+        <Block {...props} className={styles.container}>
+            <center style={{ height: "400px" }}>
                 <div className={styles.row} style={{ fontSize: "79px" }}>
                     <Pill label="Product" backgroundColor="#5F8BFF" style={{
                         position: "relative",
@@ -36,14 +38,14 @@ const Banner = () => {
                     }} />
                     <span>Storyteller</span>
                 </div>
-            </div>
+            </center>
             <div className={styles.highlightBox}>
                 <div className="wrapper">
                     Currently cooking up delightful experiences and tackling tricky user problems for over 400 millions Users at <span>Flipkart!</span>
                     <div>Previously @ MTX Group</div>
                 </div>
             </div>
-        </div>
+        </Block>
     );
 };
 

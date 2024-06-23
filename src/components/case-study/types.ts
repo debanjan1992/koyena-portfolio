@@ -7,4 +7,5 @@ export interface CaseStudyProps {
     backgroundColor: string;
     highlightColor: string;
     rightContent: ReactNode;
+    buttonLabel?: string;
 }

@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 0 60px;
+}
+
+.imageBackground {
+    background-color: #321F51;
+    width: 300px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    left: 100px;
+}
+
+.mimi {
+    width: 250px;
+    position: relative;
+    top: 10px;
+}
+
+.bioText {
+    span {
+        color: #A591C6;
+    }
+}
