@@ -37,6 +37,7 @@ const LinkedInButton = () => {
 const HomePage = () => {
     const aboutMeRef = useRef(null as any);
     const contactRef = useRef(null as any);
+    const workRef = useRef(null as any);
 
     const menuItems: NavMenuItem[] = [
         { label: "Work" },
@@ -45,7 +46,7 @@ const HomePage = () => {
         { label: "Contact" },
     ];
 
-    const logo = <span>Koyena Saha</span>;
+    const logo = <span>🌼 Koyena Saha</span>;
 
     const scrollToTop = () => window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
 
@@ -53,6 +54,7 @@ const HomePage = () => {
         switch (item.label) {
             case "About Me": (aboutMeRef?.current as any).scrollIntoView({ behavior: "smooth" }); break;
             case "Contact": (contactRef?.current as any).scrollIntoView({ behavior: "smooth" }); break;
+            case "Work": (workRef?.current as any).scrollIntoView({ behavior: "smooth" }); break;
         }
     };
 
@@ -61,7 +63,7 @@ const HomePage = () => {
             <Nav logo={logo} items={menuItems} onClick={onNavItemClick}></Nav>
             <main className={styles.main}>
                 <Banner mb={10} mt={4} />
-                <center><HighlightLabel>Selected Work</HighlightLabel></center>
+                <center ref={workRef}><HighlightLabel>Selected Work</HighlightLabel></center>
                 <Block className={styles.caseStudies} mb={8} mt={5}>
                     <Block className={styles.wrapper}>
                         {caseStudies.map((cs, idx) => <CaseStudy key={idx}

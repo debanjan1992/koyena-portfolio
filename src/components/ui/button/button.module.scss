@@ -1,64 +1,32 @@
 .btn {
-    background: transparent;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-    font-size: 24px;
-    border-radius: 18px;
-    border: 2px solid #FFFFFF;
-    padding: 7px 16px;
-    cursor: pointer;
-    transition: 0.2s;
-    box-sizing: border-box;
+  background: transparent;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  border-radius: 18px;
+  border: 2px solid #FFFFFF;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.2s ease-in;
+  top: 0px;
 
-    &:hover {
-        border-bottom: 10px solid yellow;
+  &:hover {
+    top: -8px;
+    border-bottom: 8px solid rgb(255, 255, 145);
+  }
+
+  &:active {
+    top: 5px;
+    border-bottom: 2px solid #FFFFFF;
+    background: rgb(255, 255, 145);
+    color: black;
+
+    path {
+      fill: black;
     }
+  }
 }
-
-
-.coolBeans {
-    background: transparent;
-    border: 2px solid currentColor;
-    border-radius: 3rem;
-    color: white;
-    font-size: 24px;
-    font-weight: 100;
-    overflow: hidden;
-    padding: 1rem 2rem;
-    position: relative;
-    text-decoration: none;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-
-  }
-  .coolBeans::after {
-    background-color: #A591C6;
-    border-radius: 3rem;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: 0.2s transform ease-out;
-    will-change: transform;
-    z-index: -1;
-  }
-  .coolBeans:hover::after {
-    transform: translate(0, 0);
-  }
-  .coolBeans:hover {
-    border: 2px solid transparent;
-    color: #0F0027;
-    fill: #0F0027;
-    transform: scale(1.05);
-    will-change: transform;
-  }
-  

@@ -1,12 +1,18 @@
 .images {
     position: relative;
     display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    filter: brightness(50%) blur(2px);
+
+    &:hover {
+        filter: brightness(100%) blur(0px);
+    }
 
     img {
         width: 300px;
         border-radius: 40px;
         position: relative;
-        filter: brightness(80%);
         animation-name: floating;
         animation-duration: 3s;
         animation-iteration-count: infinite;
@@ -52,21 +58,22 @@
 .label {
     position: absolute;
     z-index: 11;
+    display: flex;
+    justify-content: center;
 
     div:nth-child(1) {
         position: relative;
         font-size: 90px;
-        left: 286px;
-        top: 90px;
         letter-spacing: -5px;
+        top: 80px;
+        left: 140px;
     }
 
     div:nth-child(2) {
         position: relative;
-        left: 556px;
         font-size: 110px;
         color: #FFF38A;
-        top: 20px;
         letter-spacing: -5px;
+        top: 150px;
     }
 }

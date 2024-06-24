@@ -1,10 +1,11 @@
 .container {
     display: flex;
     border-radius: 28px;
-    padding: 28px 60px;
+    padding: 28px 40px 60px 60px;
     position: relative;
     overflow: hidden;
     transition: 0.4s;
+    min-height: 280px;
     // &:hover {
     //     transform: rotateZ(2deg);
     // }
@@ -66,4 +67,10 @@
 
 .outerWrapper {
     display: flex;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }

@@ -4,7 +4,7 @@ import { HighlightLabelProps } from "./types";
 import Block from "../block";
 
 const HighlightLabel = (props: HighlightLabelProps) => {
-    const reverse = props.flip ?? false;
+    const reverse = props.flip !== undefined ? props.flip : false;
 
     return <Block className={props.onClick ? styles.containerHover : styles.container} {...props} style={{
         cursor: props.onClick ? "pointer" : "default",

@@ -22,8 +22,8 @@ const CaseStudy3 = () => {
             flexDirection: "column",
             gap: "15px"
         }}>
-            <img src={CaseStudy3Image1} width="262px" />
-            <img src={CaseStudy3Image2} width="262px" />
+            <img src={CaseStudy3Image1} width="280px" />
+            <img src={CaseStudy3Image2} width="280px" />
         </Block>
         <Block style={{
             position: "relative",
@@ -32,8 +32,8 @@ const CaseStudy3 = () => {
             flexDirection: "column",
             gap: "15px"
         }}>
-            <img src={CaseStudy3Image3} width="262px" />
-            <img src={CaseStudy3Image4} width="262px" />
+            <img src={CaseStudy3Image3} width="280px" />
+            <img src={CaseStudy3Image4} width="280px" />
         </Block>
     </Block>
 };
@@ -45,10 +45,10 @@ export const caseStudies: CaseStudyProps[] = [
         summary: "Boosting discoverability in Flipkart's Home & Furniture category by highlighting 1700+ Tail & Torso verticals, essential for sector growth",
         backgroundColor: "#EC304B",
         highlightColor: "#DD112F",
-        rightContent: <img src={Image1} width="262px" style={{
+        rightContent: <img src={Image1} width="320px" style={{
             position: "relative",
-            top: "44px",
-            left: "120px"
+            top: "68px",
+            left: "60px"
         }} />
     },
     {
@@ -57,10 +57,10 @@ export const caseStudies: CaseStudyProps[] = [
         summary: "Empowering eco-conscious consumers with a user-friendly platform for discovering and buying environmentally safe products effortlessly",
         backgroundColor: "#008E41",
         highlightColor: "#007E3A",
-        rightContent: <img src={Image2} width="262px" style={{
+        rightContent: <img src={Image2} width="320px" style={{
             position: "relative",
-            top: "44px",
-            left: "120px"
+            top: "68px",
+            left: "60px"
         }} />
     },
     {
