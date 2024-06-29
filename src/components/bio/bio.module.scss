@@ -6,42 +6,16 @@
 }
 
 .imageBackground {
-    // background-color: #321F51;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    width: 300px;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     text-align: center;
     overflow: hidden;
     position: relative;
-    left: 100px;
     animation: gradient 15s ease infinite;
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-}
-
-.mimi {
-    width: 250px;
-    position: relative;
-    top: 10px;
 }
 
 .bioText {
+    text-wrap: balance;
     span {
         color: #A591C6;
     }
@@ -50,4 +24,83 @@
 .pills {
     position: absolute;
     z-index: 10;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        font-size: 16px;
+        padding: 0 60px;
+    }
+    .mimi {
+        width: 220px;
+        position: relative;
+        top: 10px;
+    }
+    .imageBackground {
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .bioText {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1199px) {
+    .container {
+        font-size: 14px;
+        padding: 0 40px;
+    }
+    .mimi {
+        width: 200px;
+        position: relative;
+        top: 10px;
+    }
+    .imageBackground {
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .bioText {
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        font-size: 16px;
+        padding: 0 60px;
+    }
+    .mimi {
+        width: 250px;
+        position: relative;
+        top: 10px;
+    }
+    .imageBackground {
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .bioText {
+        padding: 0 20px;
+    }
 }

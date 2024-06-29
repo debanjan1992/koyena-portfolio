@@ -14,8 +14,7 @@ const CaseStudy = (props: CaseStudyProps) => {
                         <Block className={styles.header}>{props.headerText}</Block>
                         <Block className={styles.title}>{props.title}</Block>
                         <Block className={styles.summary}>{props.summary}</Block>
-                        <Block style={{ flex: 1 }}></Block>
-                        <Block className={styles.actionBtn}>
+                        <Block mt={2} mb={2} className={styles.actionBtn}>
                             <Button>{props.buttonLabel ? props.buttonLabel : 'Read Case Study'}</Button>
                         </Block>
                     </Block>

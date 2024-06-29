@@ -36,8 +36,8 @@ const BioRight = (props: BlockProps) => {
 
 const Bio = (props: BioProps) => {
     return <Block {...props} className={styles.container}>
-        <BioLeft style={{ flex: 1 }}></BioLeft>
-        <BioRight style={{ flex: 1 }} p={5}></BioRight>
+        <BioLeft></BioLeft>
+        <BioRight></BioRight>
     </Block>
 };
 

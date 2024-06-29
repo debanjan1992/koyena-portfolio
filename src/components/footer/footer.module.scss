@@ -63,17 +63,134 @@
 
     div:nth-child(1) {
         position: relative;
-        font-size: 90px;
-        letter-spacing: -5px;
-        top: 80px;
-        left: 140px;
     }
 
     div:nth-child(2) {
         position: relative;
-        font-size: 110px;
         color: #FFF38A;
-        letter-spacing: -5px;
-        top: 150px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .label {
+        div:nth-child(1) {
+            font-size: 60px;
+            letter-spacing: -5px;
+            top: 80px;
+            left: 140px;
+        }
+
+        div:nth-child(2) {
+            font-size: 80px;
+            letter-spacing: -5px;
+            top: 120px;
+        }
+    }
+
+    .images {
+        img {
+            width: 30vw;
+            border-radius: 40px;
+        }
+    
+        img:nth-child(1) {
+            left: 80px;
+        }
+    
+        img:nth-child(2) {
+            top: 80px;
+        }
+    
+        img:nth-child(3) {
+            right: 60px;
+        }
+    
+        img:nth-child(4) {
+            top: 80px;
+            right: 100px;
+        }
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1199px) {
+    .label {
+        div:nth-child(1) {
+            font-size: 70px;
+            letter-spacing: -5px;
+            top: 80px;
+            left: 140px;
+        }
+
+        div:nth-child(2) {
+            font-size: 80px;
+            letter-spacing: -5px;
+            top: 140px;
+            left: -10px;
+        }
+    }
+
+    .images {
+        img {
+            width: 25vw;
+            border-radius: 40px;
+        }
+    
+        img:nth-child(1) {
+            left: 80px;
+        }
+    
+        img:nth-child(2) {
+            top: 80px;
+        }
+    
+        img:nth-child(3) {
+            right: 60px;
+        }
+    
+        img:nth-child(4) {
+            top: 80px;
+            right: 100px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .label {
+        div:nth-child(1) {
+            font-size: 90px;
+            letter-spacing: -5px;
+            top: 80px;
+            left: 140px;
+        }
+
+        div:nth-child(2) {
+            font-size: 110px;
+            letter-spacing: -5px;
+            top: 150px;
+        }
+    }
+    .images {
+        img {
+            width: 300px;
+            border-radius: 40px;
+        }
+    
+        img:nth-child(1) {
+            left: 80px;
+        }
+    
+        img:nth-child(2) {
+            top: 80px;
+        }
+    
+        img:nth-child(3) {
+            right: 60px;
+        }
+    
+        img:nth-child(4) {
+            top: 80px;
+            right: 100px;
+        }
     }
 }
