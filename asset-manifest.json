@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/koyena-portfolio/static/css/main.0c8a496a.css",
-    "main.js": "/koyena-portfolio/static/js/main.8e8e7125.js",
+    "main.css": "/koyena-portfolio/static/css/main.12a98eb4.css",
+    "main.js": "/koyena-portfolio/static/js/main.fbe4b088.js",
     "static/js/453.51a0b99c.chunk.js": "/koyena-portfolio/static/js/453.51a0b99c.chunk.js",
     "static/media/2.png": "/koyena-portfolio/static/media/2.8dfab84b0345d02834fc.png",
     "static/media/1.png": "/koyena-portfolio/static/media/1.b56d1b0d584e0e919d92.png",
@@ -11,12 +11,12 @@
     "static/media/image1.png": "/koyena-portfolio/static/media/image1.6713bc8a0ee0f182a240.png",
     "static/media/image2.png": "/koyena-portfolio/static/media/image2.c03431509591f32afeca.png",
     "index.html": "/koyena-portfolio/index.html",
-    "main.0c8a496a.css.map": "/koyena-portfolio/static/css/main.0c8a496a.css.map",
-    "main.8e8e7125.js.map": "/koyena-portfolio/static/js/main.8e8e7125.js.map",
+    "main.12a98eb4.css.map": "/koyena-portfolio/static/css/main.12a98eb4.css.map",
+    "main.fbe4b088.js.map": "/koyena-portfolio/static/js/main.fbe4b088.js.map",
     "453.51a0b99c.chunk.js.map": "/koyena-portfolio/static/js/453.51a0b99c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c8a496a.css",
-    "static/js/main.8e8e7125.js"
+    "static/css/main.12a98eb4.css",
+    "static/js/main.fbe4b088.js"
   ]
 }
